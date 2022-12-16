@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>陰謀論判定AI(Beta)</title>
+</head>
+<body>
+    <div>
+        <h1>陰謀論判定AI(Beta)</h1>
+        <p>陰謀論判定AIをWeb上でさわれます</p>
+        <p style="color: #fc4545;">※誤判定をする可能性があります。自己責任の上ご使用ください</p>
+    </div>
+    <div>
+        <label for="text_input">判定するテキスト</label>
+        <textarea id="text_input" cols="30" rows="10"></textarea>
+        <button id="text_do">判定する</button>
+    </div>
+    <script>
+        const textinput = document.getElementById("text_input");
+        const textdo = document.getElementById("text_do");
 
+        textdo.onclick = () =>{
+            const target_text = textinput.value;
+        }
+    </script>
+</body>
+</html>
